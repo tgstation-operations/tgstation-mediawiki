@@ -1,0 +1,80 @@
+{
+	"name": "WSOAuth",
+	"version": "9.0.0",
+	"namemsg": "wsoauth-extensionname",
+	"url": "https://www.mediawiki.org/wiki/Extension:WSOAuth",
+	"type": "other",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Xxmarijnw Marijn van Wezel]"
+	],
+	"descriptionmsg": "wsoauth-desc",
+	"license-name": "MIT",
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"extensions": {
+			"PluggableAuth": ">= 7.0"
+		}
+	},
+	"MessagesDirs": {
+		"WSOAuth": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"WSOAuthAlias": "WSOAuth.i18n.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"WSOAuth\\": "src/"
+	},
+	"Hooks": {
+		"GetPreferences": "main",
+		"LoadExtensionSchemaUpdates": "SchemaUpdater"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "\\WSOAuth\\WSOAuthHooks"
+		},
+		"SchemaUpdater": {
+			"class": "\\WSOAuth\\WSOAuthSchemaUpdater"
+		}
+	},
+	"config": {
+		"OAuthCustomAuthProviders": {
+			"value": false,
+			"descriptionmsg": "wsoauth-auth-providers-desc"
+		},
+		"OAuthAutoPopulateGroups": {
+			"value": [],
+			"descriptionmsg": "wsoauth-auto-populate-groups-desc"
+		},
+		"OAuthMigrateUsersByUsername": {
+			"value": false,
+			"descriptionmsg": "wsoauth-migrate-users-by-username-desc"
+		},
+		"OAuthDisallowRemoteOnlyAccounts": {
+			"value": false,
+			"descriptionmsg": "wsoauth-disallow-remote-only-accounts-desc"
+		},
+		"OAuthUseRealNameAsUsername": {
+			"value": false,
+			"descriptionmsg": "wsoauth-use-real-name-as-username-desc"
+		}
+	},
+	"SpecialPages": {
+		"WSOAuthConnectRemote": "\\WSOAuth\\WSOAuthConnectRemoteSpecialPage"
+	},
+	"attributes": {
+		"PluggableAuth": {
+			"WSOAuth": {
+				"class": "\\WSOAuth\\WSOAuth",
+				"services": [
+					"MainConfig",
+					"UserNameUtils",
+					"HookContainer"
+				]
+			}
+		}
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Duke of Wikipädia",
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"Fúlvio",
+			"YuriNikolai"
+		]
+	},
+	"wsoauth-desc": "Estende a extensão PluggableAuth para fornecer autenticação usando OAuth.",
+	"wsoauth-auth-providers-desc": "Uma matriz contendo uma lista de provedores OAuth personalizados junto com seus nomes de classe.",
+	"wsoauth-auto-populate-groups-desc": "Um array contendo uma lista de nomes de grupos MediaWiki que devem ser atribuídos automaticamente ao usuário após a autenticação.",
+	"wsoauth-authentication-failure": "A autenticação falhou (você está autorizado para essa wiki?).",
+	"wsoauth-invalid-username": "O nome de usuário fornecido pelo provedor OAuth não é válido.",
+	"wsoauth-unknown-auth-provider-class-exception-message": "Classe do provedor OAuth não carregada ou não encontrada",
+	"wsoauth-unknown-auth-provider-exception-message": "Provedor OAuth desconhecido ($1)",
+	"wsoauth-invalid-auth-provider-class-exception-message": "A classe do provedor OAuth não implementa AuthProvider",
+	"wsoauth-initiate-login-failure": "Não foi possível iniciar a comunicação com o provedor OAuth.",
+	"wsoauth-migrate-users-by-username-desc": "Permitir ou não a usurpação de contas existentes por nome de usuário(usado somente se <code>migrateUsersByUsername</code> não estiver definido para o provedor de autenticação específico).",
+	"wsoauth-not-configured-message": "A entrada remoto não foi configurado para essa wiki. Tente um método de autenticação diferente.",
+	"wsoauth-prefs-manage-remote": "Contas remotas:",
+	"wsoauth-manage-remotes": "Gerenciar contas remotas",
+	"wsoauth-could-not-create-mapping": "Não foi possível criar o mapeamento.",
+	"wsoauth-login-button-label-wikipedia": "Entrar com a Wikipédia",
+	"wsoauth-login-button-label-wikimedia": "Entrar com a Wikimedia",
+	"wsoauth-login-button-label-facebook": "Entrar com o Facebook"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac",
+			"Vlad5250",
+			"Okras"
+		]
+	},
+	"pluggableauth-authentication-failure": "Пользователь не может быть аутентифицирован.",
+	"pluggableauth-fatal-error": "Ошибка аутентификации пользователя. Попробуйте ещё раз или обратитесь к системному администратору."
+}

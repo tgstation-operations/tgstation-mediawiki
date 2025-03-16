@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"tabs-tab-label": "Καρτέλα $1",
+	"tabs-toggle-open": "Εμφάνιση περιεχομένων",
+	"tabs-toggle-close": "Απόκρυψη περιεχομένων"
+}

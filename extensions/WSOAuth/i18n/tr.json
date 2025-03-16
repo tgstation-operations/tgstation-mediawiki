@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"MuratTheTurkish"
+		]
+	},
+	"wsoauth-desc": "PluggableAuth uzantısını OAuth kullanarak kimlik doğrulaması sağlayacak şekilde genişletir.",
+	"wsoauth-auth-providers-desc": "Sınıf adlarıyla birlikte özel OAuth sağlayıcılarının listesini içeren bir dizi.",
+	"wsoauth-auto-populate-groups-desc": "Kimliği doğrulandıktan sonra kullanıcıya otomatik olarak atanması gereken MediaWiki grup adlarının listesini içeren bir dizi.",
+	"wsoauth-authentication-failure": "Kimlik doğrulama başarısız oldu (bu viki için yetkiniz var mı?).",
+	"wsoauth-invalid-username": "OAuth sağlayıcısı tarafından sağlanan kullanıcı adı geçerli değil.",
+	"wsoauth-unknown-auth-provider-class-exception-message": "OAuth sağlayıcı sınıfı yüklenmedi veya bulunamadı",
+	"wsoauth-unknown-auth-provider-exception-message": "Bilinmeyen OAuth sağlayıcısı ($1)",
+	"wsoauth-invalid-auth-provider-class-exception-message": "OAuth sağlayıcı sınıfı AuthProvider uygulamıyor",
+	"wsoauth-initiate-login-failure": "OAuth sağlayıcısı ile iletişim başlatılamıyor.",
+	"wsoauth-migrate-users-by-username-desc": "Mevcut hesapların kullanıcı adına göre kullanılmasına izin verilip verilmeyeceği.",
+	"wsoauth-not-configured-message": "Bu viki için uzaktan oturum açma yapılandırılmamış. Lütfen farklı bir kimlik doğrulama yöntemi deneyin."
+}

@@ -211,6 +211,7 @@ wfLoadExtension( 'WSOAuth' );
 wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'UserMerge' );
 wfLoadExtension( 'DisableAccount' );
+wfLoadExtension( 'TitleBlacklist' );
 
 # WSOAuth configuration
 

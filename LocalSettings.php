@@ -19,18 +19,12 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename = "/tg/station 13 Wiki";
-$wgMetaNamespace = "TG13";
-
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
 ## For more information on customizing the URLs
 ## (like /w/index.php/Page_title to /wiki/Page_title) please see:
 ## https://www.mediawiki.org/wiki/Manual:Short_URL
 $wgScriptPath = "";
-
-## The protocol and server name to use in fully-qualified URLs
-$wgServer = "https://tgstation13.org";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -93,7 +87,6 @@ $wgAuthenticationTokenVersion = "1";
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
 ## License and Creative Commons licenses are supported so far.
-$wgRightsPage = "Privacy policy"; # Set to the title of a wiki page that describes your license/copyright
 $wgRightsUrl = "";
 $wgRightsText = "";
 $wgRightsIcon = "";
@@ -119,12 +112,27 @@ wfLoadSkin( 'Vector' );
 
 # Wiki configuration
 
+$wgSitename = "/tg/station 13 Wiki";
+$wgMetaNamespace = "TG13";
+
+## The protocol and server name to use in fully-qualified URLs
+$wgServer = "https://wiki.tgstation13.org";
+
+$wgArticlePath = "/$1";
 $wgPasswordResetRoutes = false;
 $wgEnableEmail = false;
 $wgPasswordConfig['null'] = [ 'class' => InvalidPassword::class ];
 
+$actions = ['view', 'edit', 'watch', 'unwatch', 'delete','revert', 'rollback', 'protect', 'unprotect', 'markpatrolled', 'render', 'submit', 'history', 'purge', 'info'];
+
+foreach ( $actions as $action ) {
+    $wgActionPaths[$action] = "/$action/$1";
+}
+
 ## Time zone
 $wgLocaltimezone = "UTC";
+
+$wgRightsPage = "Privacy policy"; # Set to the title of a wiki page that describes your license/copyright
 
 # Database settings
 

@@ -148,7 +148,7 @@ $wgDBssl = true;
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = $_ENV['WIKI_UPGRADE_KEY'];
+$wgUpgradeKey = false;
 
 $wgSecretKey = $_ENV['WIKI_SECRET_KEY'];
 

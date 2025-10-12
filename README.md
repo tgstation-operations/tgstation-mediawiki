@@ -1,3 +1,7 @@
+# Deprecated
+
+This repo was deprecated in favor of a nixified setup in the infrastructure repo. It will remain as a public archive.
+
 # /tg/station 13 Wiki
 
 This is the repository for the code of the live /tg/station wiki. Following items have been included manually:
